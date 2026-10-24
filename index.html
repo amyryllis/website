@@ -8,6 +8,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<audio id="bg-music" loop>
+<source src="audio/garden-music.mp3" type="audio/mpeg">
+</audio>
+
+<button id="music-button" type="button">
+    press play -> ▶️
+</button>
+
+<script>
+    const music = document.querySelector("#bg-music");
+    const musicButton = document.querySelector("#music-button");
+
+    musicButton.addEventListener("click", function () {
+        if (music.paused) {
+            music.play();
+            musicButton.textContent = "⏸️";
+        } else {
+            music.pause();
+            musicButton.textContent = "▶️";
+        }
+    });
+</script>
+
 <body>
     <header>
         <a class="brand" href="index.html">
