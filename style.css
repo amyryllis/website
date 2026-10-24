@@ -1,0 +1,141 @@
+body {
+    background-color: #f6f5e9;
+    color: #2f5539;
+    font-family: Georgia, serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    background-color: #A8BE9B;
+    padding: 5px 30px;
+
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    z-index: 1000;
+}
+
+main {
+    padding-top: 30px;
+    flex: 1;
+}
+
+nav {
+    background-color: #e2ebd8;
+    padding: 15px 20px;
+    text-align: right;
+    border-radius: 40px;
+    word-spacing: 5px;
+}
+
+nav a,
+nav a:visited {
+    color: #707e67;
+    text-decoration: none;
+}
+
+.brand, .brand:visited {
+    color: #2F5038;
+    text-decoration: none;
+}
+
+.brand:hover, nav a:hover {
+    color: #2F5038;
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 10px 20px;
+
+    background-color: #A8BE9B;
+    color: #28472F;
+
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:visited {
+    color: #28472F;
+}
+
+.social-links a:hover {
+    background-color: #466B50;
+    color: #F6F5E9;
+}
+
+.social-links a:focus-visible {
+    outline: 2px solid #466B50;
+    outline-offset: 3px;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.border {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+#gif-button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #466B50;
+    font-style: italic;
+    text-decoration: underline;
+    cursor: pointer;
+    font: inherit;
+}
+
+#scuba {
+    margin-top: 15px;
+    display: block;
+    margin: 20px auto;
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+
+}
+
+#scuba[hidden] {
+    display: none;
+}
+
+footer {
+    width: 100%;
+}
+
+footer .border {
+    display: block;
+    width: 100%;
+    height: auto;
+}
